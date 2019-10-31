@@ -1,0 +1,43 @@
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+}
+
+body {
+    margin: 20px;
+    line-height: 1.4em;
+}
+
+#bodyContent {
+    padding-bottom: 10px;
+}
+
+.animalImage {
+    max-width: 500px;
+    float: left;
+    margin: 10px;
+    margin-right: 20px;
+}
+
+.imageText {
+    background-color: rgb(255, 224, 228);
+    padding: 20px;
+    padding-top: 5px;
+}
+
+div {
+    clear: both;
+    font-family: 'Roboto', sans-serif;
+}
+
+.noclear {
+    clear: none !important;
+}
+
+a {
+    font-weight: bold;
+}
