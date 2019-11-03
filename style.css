@@ -1,32 +1,46 @@
-h1, h2 {
+h1 {
     font-family: 'Poppins', sans-serif;
 }
 
-p {
-    font-family: 'Roboto', sans-serif;
-    margin: 10px;
-}
-
 body {
-    margin: 20px;
     line-height: 1.4em;
+    margin: 0;
+    padding: 0;
+    background-color: #CCCECE;
 }
 
-#bodyContent {
-    padding-bottom: 10px;
-}
-
-.animalImage {
+.inline-image {
+    /*
     max-width: 500px;
     float: left;
     margin: 10px;
     margin-right: 20px;
+    */
+
+    max-height: 300px;
+    margin: 10px;
 }
 
-.imageText {
+.image-text {
     background-color: rgb(255, 224, 228);
     padding: 20px;
     padding-top: 5px;
+}
+
+.title {
+    color: #C31815;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.text-content {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 1.6em;
+    padding-left: 40px;
 }
 
 div {
@@ -39,5 +53,100 @@ div {
 }
 
 a {
-    font-weight: bold;
+    color: inherit;
+    text-decoration: none;
+}
+
+a.inline-link {
+    text-decoration: underline;
+}
+
+#return-button:hover {
+    cursor: pointer;
+}
+
+.disable-text-highlighting {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+/* HOLY GRAIL LAYOUT STUFFS */
+
+* {
+    box-sizing: border-box;
+}
+
+#flex {
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    width: 100%;
+}
+
+#main-wrapper {
+    display: grid;
+    grid-template-rows: 50px 100px 75px auto 100px;
+    grid-template-columns: 100px 200px auto 200px 100px;
+    /*height: 90vh;*/
+    width: 100%;
+}
+
+#upper {
+    background-color: #C31815;
+    grid-row: 2/3;
+    grid-column: 2/5;
+    padding-left: 35px;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: white;
+}
+
+#other-upper {
+    background-color: #C31815;
+    grid-row: 3/4;
+    grid-column: 2/5;
+    padding-right: 25px;
+    text-align: right;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+}
+
+#middle-left {
+    background-color: #3E424B;
+    grid-row: 4/5;
+    grid-column: 1/3;
+}
+#middle-middle {
+    background-color: white;
+    grid-row: 4/5;
+    grid-column: 3/4;
+    padding: 40px;
+}
+#middle-right {
+    background-color: #3E424B;
+    grid-row: 4/5;
+    grid-column: 4/6;
+}
+
+#bottom {
+    background-color: #C31815;
+    grid-row: 5/6;
+    grid-column: 1/6;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -1,41 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Cheetahs</title>
+    <title>Games Modding Home</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700|Roboto:300&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div>
-        <h1>Cheetahs</h1>
-    </div>
-
-    <div id = "bodyContent">
-        <p>
-            Cheetahs are fast land animals. They are the fastest land animal. They can reach speeds up to 112km/h. They are carnivores and spend much of their free time hunting.
-            Because of the effort they spend running so fast, they need to spend a lot of time at the watering hole cooling off. Cheetahs are native to Africa and are found
-            manily in the savannah.
-        </p>
-        <img class = "animalImage" src = "images/cheetah.jpg"/>
-        <div class = "imageText noclear">
-            <h2>Cheetah Facts!</h2>
-            - With a narrow waist and slim body, cheetah’s body is covered by several black-circled spots that measure 2 – 3 cm (0.79 – 1.2 inches). <br/>
-            - These cats are capable to reach a speed of 100 km (62 miles) within just 3 seconds; however, they can retain this much speed for a  short burst of time. <br/>
-            - The weight of an adult cheetah is about 35 – 72 kg (77 – 160 lb). <br/>
-            - Cheetah is 110 – 150 cm (43 – 59 inches) long excluding the length of tail which measures 60 – 84 cm (24 – 33 inches) in length. <br/>
-            - The shoulder height of cheetah measures around 66 – 94 cm (26 – 37 inches). <br/>
-            - Females are slightly shorter as compared to the males. <br/>
-            - Because of the greater sized nostrils, cheetah is adept to take more and more oxygen especially while running. The heart beat significantly enhances 60 – 150 breaths per minute. <br/>
-            - Too many attempts have been made to keep this animal under captivity but most of them proved to be unsuccessful. <br/>
-            - According to the new research, cheetah species appear to have been evolved some 11,000,000 years ago.
-        </div>
-    </div>
-
-    <div>
-        <p>
-            <a href = "more/index.html">Learn more about monkeys</a>
-        </p>
-    </div>
+    <div id="flex">
+      <div id="main-wrapper">
+          <div id="upper">
+            <h1>VIDEO GAMES MODDING</h1>
+          </div>
+          <div id="other-upper">
+            <h2>Home | <a href="dataPage/index.html">Data</a> | <a href="gamesPage/index.html">Games</a> | <a href="bibPage/index.html">Sources</a></h2>
+          </div>
+          <div id="middle-left"></div>
+          <div id="middle-middle">
+            <div>
+              <h2 class="title">What is games modding?</h2>
+              <p class="text-content">
+                Games modding is the act of going into a video game's code and modifying it to fundamentally change the game. 
+                This includes anything from visual changes, to story, sound, and even gameplay changes. Many "modders" tend 
+                to publish their works online for players to download. The heart of modding is to not only fix broken games, 
+                but to also enhance and boost the longevity of people's favorite titles.
+              </p>
+            </div>
+            <br/><br/><br/><br/>
+            <div>
+              <h2 class="title">Why support modding?</h2>
+              <p class="text-content">
+                  Modding is beneficial for the games community for many reasons. First, it allows people to experiment and 
+                  learn game design principles, thus allowing them to join the industry. The creativity of these mods also 
+                  tend to create entirely new genres as well, pushing the industry forward toward new ideas and games. And 
+                  finally, it boosts the longevity and profits of already existing games.
+                </p>
+            </div>
+          </div>
+          <div id="middle-right"></div>
+          <div id="bottom">
+              <a id="return-button" class="disable-text-highlighting">return to top</a>
+          </div>
+      </div>
+  </div>
+  <script>
+    document.getElementById("return-button").addEventListener("click", function() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    });
+  </script>
   </body>
 </html>
